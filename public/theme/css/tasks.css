@@ -1,0 +1,134 @@
+/*************** 1.Variables ***************/
+/* ------------------ Color Pallet ------------------ */
+/*************** 2.Mixins ***************/
+/*************** Tasks ***************/
+.tasks-search-container {
+  margin-bottom: 2rem;
+  position: relative; }
+  .tasks-search-container .tasks-search {
+    position: relative;
+    margin-right: 50px; }
+    .tasks-search-container .tasks-search .form-control {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding: .7rem 1rem; }
+  .tasks-search-container .add-btn {
+    -webkit-border-radius: 0 3 3 0;
+    -moz-border-radius: 0 3 3 0;
+    border-radius: 0 3 3 0;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.tasks-title-bar {
+  margin-bottom: 1.5rem; }
+  .tasks-title-bar h2 {
+    margin: 0;
+    font-weight: 400; }
+    .tasks-title-bar h2 span.date {
+      color: #999999;
+      font-size: 1rem;
+      margin-left: 5px; }
+
+.tasks-block {
+  background: #f4f5fb;
+  padding: 1rem .5rem 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.5s ease;
+  color: #333333; }
+  .tasks-block .task-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .tasks-block .task-header .circle {
+      border: 2px solid #a9b1e0;
+      color: #ffffff;
+      width: 40px;
+      height: 40px;
+      line-height: 36px;
+      vertical-align: middle;
+      font-size: 1rem;
+      text-align: center;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px; }
+    .tasks-block .task-header .usr-name {
+      margin-left: 5px; }
+    .tasks-block .task-header .actions {
+      margin-left: auto;
+      display: block;
+      color: #000000;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      align-items: center;
+      justify-content: center;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
+      .tasks-block .task-header .actions:hover {
+        background: rgba(103, 202, 240, 0.2); }
+      .tasks-block .task-header .actions:focus {
+        outline: none;
+        background: rgba(246, 141, 96, 0.2); }
+  .tasks-block.red {
+    border-left: 2px solid #fd7274; }
+    .tasks-block.red .task-header .circle {
+      border: 2px solid #fd7274;
+      color: #fd7274; }
+  .tasks-block.green {
+    border-left: 2px solid #a5ca7b; }
+    .tasks-block.green .task-header .circle {
+      border: 2px solid #a5ca7b;
+      color: #a5ca7b; }
+  .tasks-block.blue {
+    border-left: 2px solid #67caf0; }
+    .tasks-block.blue .task-header .circle {
+      border: 2px solid #67caf0;
+      color: #67caf0; }
+  .tasks-block.yellow {
+    border-left: 2px solid #f9be52; }
+    .tasks-block.yellow .task-header .circle {
+      border: 2px solid #f9be52;
+      color: #f9be52; }
+  .tasks-block.pink {
+    border-left: 2px solid #ff8087; }
+    .tasks-block.pink .task-header .circle {
+      border: 2px solid #ff8087;
+      color: #ff8087; }
+  .tasks-block.orange {
+    border-left: 2px solid #f68d60; }
+    .tasks-block.orange .task-header .circle {
+      border: 2px solid #f68d60;
+      color: #f68d60; }
+  .tasks-block.lavandar {
+    border-left: 2px solid #AC92EC; }
+    .tasks-block.lavandar .task-header .circle {
+      border: 2px solid #AC92EC;
+      color: #AC92EC; }
+  .tasks-block.jungle-green {
+    border-left: 2px solid #41ca94; }
+    .tasks-block.jungle-green .task-header .circle {
+      border: 2px solid #41ca94;
+      color: #41ca94; }
+  .tasks-block.dark-blue {
+    border-left: 2px solid #1da8df;
+    color: #1da8df; }
+    .tasks-block.dark-blue .task-header .circle {
+      border: 2px solid #1da8df;
+      color: #1da8df; }
+  .tasks-block .task-body p.time {
+    font-size: .7rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    margin-bottom: 5px; }
+  .tasks-block .task-body h5 {
+    font-size: .925rem;
+    font-weight: 500;
+    line-height: 130%;
+    margin: 0; }

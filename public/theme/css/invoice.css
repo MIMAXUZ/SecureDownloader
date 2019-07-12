@@ -1,0 +1,42 @@
+/*************** 1.Variables ***************/
+/* ------------------ Color Pallet ------------------ */
+/*************** 2.Mixins ***************/
+/*************** Invoice Page ***************/
+.invoice-container {
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #d0d6e9; }
+  .invoice-container .invoice-header {
+    padding: 1rem 1.5rem; }
+    .invoice-container .invoice-header .invoice-logo {
+      margin: 0;
+      display: inline-block;
+      font-size: 1.7rem;
+      color: #616a71;
+      font-weight: 700;
+      transition: all 0.5s ease; }
+  .invoice-container .invoice-address {
+    background: #f0f4f8;
+    padding: 1rem 1.5rem;
+    line-height: 130%;
+    font-size: 1rem; }
+  .invoice-container address {
+    margin-top: 10px;
+    font-size: .8rem;
+    color: #8796af; }
+  .invoice-container .invoice-details {
+    margin-top: 2.5rem;
+    text-align: right; }
+  .invoice-container .invoice-body {
+    padding: 3rem 1.5rem 1rem 1.5rem; }
+  .invoice-container .invoice-footer {
+    background: #f0f4f8;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: .7rem; }
+  .invoice-container .invoice-payment {
+    background: #f0f4f8;
+    padding: 0 1.5rem 0 1.5rem;
+    text-align: right;
+    font-size: .8rem;
+    line-height: 200%; }

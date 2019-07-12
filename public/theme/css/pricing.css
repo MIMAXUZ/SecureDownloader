@@ -1,0 +1,115 @@
+/*************** 1.Variables ***************/
+/* ------------------ Color Pallet ------------------ */
+/*************** 2.Mixins ***************/
+/*************** Pricing Plans ***************/
+.pricing-plan {
+  margin: 0 0 20px 0;
+  width: 100%;
+  position: relative;
+  background: #e6ecf3;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px; }
+  .pricing-plan .pricing-header {
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #67caf0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #67caf0 0%, #1da8df 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #67caf0), color-stop(100%, #1da8df));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #67caf0 0%, #1da8df 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #67caf0 0%, #1da8df 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #67caf0 0%, #1da8df 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #67caf0 0%, #1da8df 100%);
+    /* W3C */
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px; }
+    .pricing-plan .pricing-header .pricing-title {
+      font-size: 1.2rem;
+      color: #ffffff;
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0;
+      text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15); }
+    .pricing-plan .pricing-header .pricing-cost {
+      color: #ffffff;
+      padding: 15px 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15); }
+    .pricing-plan .pricing-header .pricing-save {
+      color: #ffffff;
+      padding: 10px 0;
+      font-size: 1rem;
+      font-weight: 700; }
+    .pricing-plan .pricing-header.green {
+      background: #a5ca7b;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #a5ca7b 0%, #00b894 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5ca7b), color-stop(100%, #00b894));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #a5ca7b 0%, #00b894 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #a5ca7b 0%, #00b894 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #a5ca7b 0%, #00b894 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #a5ca7b 0%, #00b894 100%);
+      /* W3C */ }
+    .pricing-plan .pricing-header.orange {
+      background: #f9be52;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #f9be52 0%, #f68d60 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9be52), color-stop(100%, #f68d60));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f9be52 0%, #f68d60 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f9be52 0%, #f68d60 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #f9be52 0%, #f68d60 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #f9be52 0%, #f68d60 100%);
+      /* W3C */ }
+  .pricing-plan .pricing-features {
+    padding: 0;
+    margin: 20px 0;
+    text-align: left; }
+    .pricing-plan .pricing-features li {
+      padding: 15px 15px 15px 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      position: relative;
+      line-height: 100%; }
+      .pricing-plan .pricing-features li:before {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-size: 1rem;
+        color: #000000;
+        content: "\e9ec";
+        font-family: 'icomoon'; }
+  .pricing-plan .pricing-footer {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    text-align: center;
+    padding: 10px 0 10px 0; }
+
+@media (max-width: 767px) {
+  .pricing-plan .pricing-header {
+    text-align: center; }
+    .pricing-plan .pricing-header i {
+      display: block;
+      float: none;
+      margin-bottom: 20px; } }
