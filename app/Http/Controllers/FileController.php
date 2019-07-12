@@ -164,16 +164,16 @@ class FileController extends Controller
     	}            
     }
 }
-    public function editmenus($menu_id)    
+    public function editFiles($file_id)    
     {     
-    	$menupost = Menus::findOrFail($menu_id);
-    	return view('panel.modules.addeditmenus',compact('menupost'));
+    	$filepost = Files::findOrFail($menu_id);
+    	return view('files.get_files_by_types',compact('filepost'));
     } 
-    public function delete($menu_id)
+    public function delete($file_id)
     {
-    	$menupost = Menus::findOrFail($menu_id);
-    	$menupost->delete();
-    	\Session::flash('warning', "You successfully deleted this menu! But you won't able to recovery this menu!!");
+    	$filepost = Menus::findOrFail($menu_id);
+    	$filepost->delete();
+    	\Session::flash('warning', "You successfully deleted this file! But you won't able to recovery this file!");
     	return redirect()->back();
     }
 }
