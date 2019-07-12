@@ -19,3 +19,5 @@ Route::get('list/uploads', 'FileController@getFiles');
 Route::get('fileupload', 'FileController@getFiles');
 Route::get('sort_by_types/{file_type_name}', 'FileController@get_files_by_types');
 Route::post('upload/files/to/server', 'FileController@addnew');
+Route::get('upload/files/to/server/{id}', 'FileController@editFiles');
+Route::post('delete/files/from/server/{id}', 'FileController@delete');
