@@ -25,15 +25,12 @@ class FileController extends Controller
         $key = 'all';
         $files = Files::
             select('uploaded_files.*')->get();
-            //->where(array('file_type_name'=> $file_type_name))->get();
             return view('files.get_files_by_types',compact('files','key'));
     }
     
     public function get_files_by_types($file_type_name)    
     {   
         $key = $file_type_name;
-        //if you will switch multilang function it will helps you
-        //$SysLang = \App::getLocale();
         $exists = Files::
         where([
             ['file_type_name', '=', $file_type_name],
@@ -53,8 +50,6 @@ class FileController extends Controller
         }
     }
 
-    //opload_store
-
     public function opload_store()    { 
         return view('files.get_files'); //,compact('')
     }
@@ -72,8 +67,6 @@ class FileController extends Controller
     		return redirect()->back()->withErrors($validator->messages());
     	} 
         $inputs = $request->all();
-        //dd($request->all());
-        //dd($request->file('file_name')->extension());
         //Varibale for find uploaded file type and show to contrroller
         $getFileTyper = $request->file('file_url_name')->extension();
         $getFileSizer = $request->file('file_url_name')->getSize();
@@ -98,7 +91,6 @@ class FileController extends Controller
     	$files->file_name = $inputs['file_name'];
     	$files->file_type = $getFileTyper; 
     	$files->file_size = $getFileSizer; 
-        //$files->file_type_name = '';
 		//file for top 
         $st_file = $request->file('file_url_name');
         $st_file = Input::file('file_url_name'); 
